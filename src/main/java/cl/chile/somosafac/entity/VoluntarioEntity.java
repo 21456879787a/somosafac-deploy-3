@@ -27,6 +27,6 @@ public class VoluntarioEntity {
 
     @NotBlank(message = "El estado del voluntario no puede estar vacío")
     @Size(min = 3, max = 50, message = "El estado del voluntario debe tener entre 3 y 50 caracteres")
-    @Column(name = "estado_voluntario", nullable = false, columnDefinition = "VARCHAR(50) DEFAULT 'Activo'")
-    private String estadoVoluntario;
+//    @Column(name = "estado_voluntario", nullable = false, columnDefinition = "VARCHAR(50) DEFAULT 'Activo'")
+    private String estadoVoluntario = "activo";
 }

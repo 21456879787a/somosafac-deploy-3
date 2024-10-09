@@ -32,6 +32,6 @@ public class MentoriaEntity {
 
     @NotBlank(message = "El estado de mentoria no puede estar vacío")
     @Size(min = 3, max = 50, message = "El estado de mentoria debe tener entre 3 y 50 caracteres")
-    @Column(name = "estado_mentoria", nullable = false, columnDefinition = "varchar(50) default 'Pendiente'")
-    private String estadoMentoria;
+//    @Column(name = "estado_mentoria", nullable = false, columnDefinition = "varchar(50) default 'Pendiente'")
+    private String estadoMentoria = "pendiente";
 }

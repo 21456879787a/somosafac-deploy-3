@@ -29,7 +29,7 @@ public class NotificacionEntity {
 
     @NotNull(message = "La fecha de envío no puede ser nula")
     @PastOrPresent(message = "La fecha de envío no puede ser futura")
-    @Column(name = "fecha_envio", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+//    @Column(name = "fecha_envio", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime fechaEnvio;
 
     @NotBlank(message = "El tipo de notificación no puede estar vacío")

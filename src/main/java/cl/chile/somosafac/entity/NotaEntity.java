@@ -32,8 +32,8 @@ public class NotaEntity {
     @Column(nullable = false)
     private String descripcion;
 
-    @NotNull(message = "La fecha de creación no puede ser nula")
-    @PastOrPresent(message = "La fecha de creación no puede ser futura")
-    @Column(name = "fecha_creacion", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+//    @NotNull(message = "La fecha de creación no puede ser nula")
+//    @PastOrPresent(message = "La fecha de creación no puede ser futura")
+//    @Column(name = "fecha_creacion", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime fechaCreacion;
 }
